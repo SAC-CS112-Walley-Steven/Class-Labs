@@ -11,8 +11,12 @@ public class GuessGame2 {
 		System.out.print("Please enter a low number: ");
 		int userInputLow= input.nextInt();
 		
+		randomNum.setLowNumber(userInputLow);
+		
 		System.out.print("Please enter a high number: ");
 		int userInputHigh= input.nextInt();
+		
+		randomNum.setHighNumber(userInputHigh);
 		
 		System.out.print("Now, guess what the random number will be: ");
 		int userGuess = input.nextInt();
@@ -24,7 +28,11 @@ public class GuessGame2 {
 			System.out.println("Your number is too large.");
 		else
 			System.out.println("Your number is too small.");
-
+		
+		System.out.println(randomNum.getHigh());
+		System.out.println(randomNum.getLow());
+		
+		System.out.println("Random number is "+randomNum.getANumber());
 	}
 
 }
