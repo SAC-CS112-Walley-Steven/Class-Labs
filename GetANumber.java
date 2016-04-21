@@ -12,6 +12,14 @@ public class GetANumber {
 	{
 		this.high = high;
 	}
+	public int getHigh()
+	{
+		return high;
+	}
+	public int getLow()
+	{
+		return low;
+	}
 	
 	public int getANumber()
 	{
