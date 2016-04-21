@@ -1,7 +1,10 @@
+import java.util.Scanner;
 
 public class AutomobileTest {
 
 	public static void main(String[] args) {
+		
+		Scanner input = new Scanner (System.in);
 		
 		Automobile automobile1 = new Automobile (4,6,5, "Yellow", "Cabbie");
 		System.out.println(automobile1);
@@ -11,6 +14,22 @@ public class AutomobileTest {
 		
 		Automobile automobile3 = new Automobile (5,6,5, "Green", "Vany");
 		System.out.println(automobile3);
+		
+		System.out.println("\n\nMake your own car..");
+		
+		System.out.print("Enter a name for the car: ");
+		String carName = input.nextLine();
+		automobile1.setName(carName);
+		
+		System.out.print("Enter a color for the car: ");
+		String carColor = input.nextLine();
+		automobile1.setName(carColor);
+		
+		System.out.print("Enter number of doors: ");
+		int carDoors = input.nextInt();
+		automobile1.setDoors(carDoors);
+		
+		System.out.println(automobile1);
 	}
 
 }
