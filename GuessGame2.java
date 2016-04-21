@@ -6,33 +6,20 @@ public class GuessGame2 {
 
 		Scanner input = new Scanner (System.in);
 
-		GetANumber randomNum = new GetANumber();
+		RandomNumber randomNumber = new RandomNumber (10);
 	
-		System.out.print("Please enter a low number: ");
-		int userInputLow= input.nextInt();
-		
-		randomNum.setLowNumber(userInputLow);
-		
-		System.out.print("Please enter a high number: ");
-		int userInputHigh= input.nextInt();
-		
-		randomNum.setHighNumber(userInputHigh);
-		
-		System.out.print("Now, guess what the random number will be: ");
+		System.out.print("Guess what the random number will be: ");
 		int userGuess = input.nextInt();
 
-		if (userGuess==randomNum.getANumber())
+		if (userGuess==randomNumber.getANumber())
 			System.out.printf("Congrats, you guessed it. The correct number is %f\n",
-					randomNum);
-		else if (userGuess > randomNum.getANumber())
+					randomNumber.getANumber());
+		else if (userGuess > randomNumber.getANumber())
 			System.out.println("Your number is too large.");
 		else
 			System.out.println("Your number is too small.");
 		
-		System.out.println(randomNum.getHigh());
-		System.out.println(randomNum.getLow());
-		
-		System.out.printf("Random number is %d",randomNum.getANumber());
+		System.out.printf("Random number is %d",randomNumber.getANumber());
 	}
 
 }
