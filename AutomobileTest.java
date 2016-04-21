@@ -33,7 +33,7 @@ public class AutomobileTest {
 		int carCylinders = input.nextInt();
 		automobile1.setCylinder(carCylinders);
 		
-		System.out.print("Enter number of cylinders: ");
+		System.out.print("Enter Transmission Speed: ");
 		int carTrans = input.nextInt();
 		automobile1.setTrans(carTrans);
 		
