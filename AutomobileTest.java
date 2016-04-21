@@ -29,6 +29,14 @@ public class AutomobileTest {
 		int carDoors = input.nextInt();
 		automobile1.setDoors(carDoors);
 		
+		System.out.print("Enter number of cylinders: ");
+		int carCylinders = input.nextInt();
+		automobile1.setCylinder(carCylinders);
+		
+		System.out.print("Enter number of cylinders: ");
+		int carTrans = input.nextInt();
+		automobile1.setTrans(carTrans);
+		
 		System.out.println(automobile1);
 	}
 
