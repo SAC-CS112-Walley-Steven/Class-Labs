@@ -8,13 +8,19 @@ public class GuessGame2 {
 
 		GetANumber randomNum = new GetANumber();
 	
-		System.out.print("Please enter a number between 1 and 10: ");
-		double userInput= input.nextDouble();
+		System.out.print("Please enter a low number: ");
+		int userInputLow= input.nextInt();
+		
+		System.out.print("Please enter a high number: ");
+		int userInputHigh= input.nextInt();
+		
+		System.out.print("Now, guess what the random number will be: ");
+		int userGuess = input.nextInt();
 
-		if (userInput==randomNum.getANumber())
+		if (userGuess==randomNum.getANumber())
 			System.out.printf("Congrats, you guessed it. The correct number is %f\n",
 					randomNum);
-		else if (userInput > randomNum.getANumber())
+		else if (userGuess > randomNum.getANumber())
 			System.out.println("Your number is too large.");
 		else
 			System.out.println("Your number is too small.");
