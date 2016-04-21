@@ -32,7 +32,7 @@ public class GuessGame2 {
 		System.out.println(randomNum.getHigh());
 		System.out.println(randomNum.getLow());
 		
-		System.out.println("Random number is "+randomNum.getANumber());
+		System.out.printf("Random number is %d",randomNum.getANumber());
 	}
 
 }
