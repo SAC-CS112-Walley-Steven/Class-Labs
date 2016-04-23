@@ -23,7 +23,7 @@ public class AutomobileTest {
 		
 		System.out.print("Enter a color for the car: ");
 		String carColor = input.nextLine();
-		automobile1.setName(carColor);
+		automobile1.setColor(carColor);
 		
 		System.out.print("Enter number of doors: ");
 		int carDoors = input.nextInt();
